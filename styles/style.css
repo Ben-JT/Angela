@@ -344,11 +344,12 @@ li span {
 }
 
 #image-container img {
-  width: 10rem; 
+  width: 15rem; 
   height: auto;
 }
 
-
-
+.caja-button{
+  height: 10rem;
+}
 
 

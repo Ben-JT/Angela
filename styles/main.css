@@ -213,3 +213,67 @@ body {
     50% { opacity: 1; }
     100% { opacity: 0; }
 }
+
+.blink {
+  animation: blink 1s infinite;
+  color: #ff3399;              /* Color fuerte (rosado intenso) */
+  font-weight: bold;           /* Negrita */
+  font-size: 1rem;           /* Letra más grande */
+  text-shadow: 2px 2px 4px #ff99cc; /* Brillo/Resplandor rosado */
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.nombre {
+  color: #ff66cc; /* Color rosado suave */
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 1px 1px 6px #ff99cc; /* Efecto de brillo estático */
+}
+
+#celebration-box {
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 240, 250, 0.95);
+  border-radius: 20px;
+  padding: 10px 10px;
+  box-shadow: 0 0 10px #ff66cc;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+
+  width: 80%; /* Ajusta el valor para cambiar el ancho (porcentaje o en píxeles) */
+}
+
+#celebration-box.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.celebration-content {
+  display: flex;
+  align-items: center; /* Alinea verticalmente la imagen y el texto */
+  gap: 5px; /* Espacio entre la imagen y el texto */
+}
+
+#celebration-box img {
+  width: 80px;  /* Ajusta el tamaño de la imagen */
+  height: auto;
+  border-radius: 12px;
+}
+
+#celebration-box p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #cc0066;
+  margin: 0;
+}

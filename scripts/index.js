@@ -14,7 +14,8 @@ function showImage() {
     img.alt = hiddenImage.alt;
 
     const button = document.createElement('button');
-    button.textContent = 'presiona la torata';
+    button.innerHTML = 'Presiona<br>la torta';
+
     // button.disabled = true; // Desactivado inicialmente
 
     // Función para redirigir al hacer clic en la imagen
