@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let audioContext;
   let analyser;
   let microphone;
-  let audio = new Audio('The Daughters of Eve - Hey Lover.mp3');
+  let audio = new Audio('Rosa Linn - Snap .mp3');
 
 
   function updateCandleCount() {
